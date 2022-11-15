@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ca80878e94.js" crossorigin="anonymous"></script><!--FontAwesome-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section id="landing-page" class="landing-page">
+        <header>
+            <div id="navbar">
+            </div>
+        </header>
+        <article>
+            <div class="container-img">
+                <img src="css/img/logo.jpg"  alt="">
+                <div>
+                    <p>Bienvenido</p>
+                </div>
+            </div>
+        </article>
+        <section class="background-login">
+            <article class="container-blur">
+               <button id="btn-registro" class="button-landing" onclick="comenzar()">
+                    Registrarse 
+               </button>
+               <button class="button-landing ">
+                    Iniciar Sesión
+               </button>
+               <button class="google-button">
+                    <img id=logo-google src="css/img/google.png" alt="">
+                    <p>
+                        Continuar con Google
+                    </p>
+               </button>     
+            </article>
+        </section>
+    </section>
+    <section id="registro" class="background-registro oculto">
+
+
+        <header>
+            <div id="navbar">
+                <img src="css/img/LogoG-removebg-preview.png" alt="">
+                <button class="fa-solid fa-arrow-left">
+
+                </button>
+            </div>
+        </header>
+
+       <section>
+            <form class="form-registro" action="">
+                <p>
+                    Registrarse
+                </p>
+              <input class="input-landing-registro" type="text" placeholder="Nombre">
+              <input class="input-landing-registro" type="text" placeholder="Apellido">
+              <div>
+                <input class="input-landing-registro-1" type="number" placeholder="+504">            
+                <input class="input-landing-registro-2" type="tel" placeholder="Celular">
+              </div>  
+              <input class="input-landing-registro" type="email" placeholder="ejemplo@gmail.com">
+              <input class="input-landing-registro" type="password" placeholder="Contraseña">
+              <button class="btn-registro">
+                Registrarme
+              </button>
+            </form>
+       </section>
+    </section>
+    <section id="iniciar-sesion"class="background-registro oculto">
+        <header>
+            <div id="navbar">
+                <img src="css/img/LogoG-removebg-preview.png" alt="">
+                <button class="fa-solid fa-arrow-left">
+
+                </button>
+            </div>
+        </header>
+        
+            
+            <form class="form-registro-sesion" action="">
+                <p>
+                    Iniciar Sesión
+                </p>
+              <input class="input-landing-sesion" type="mail" placeholder="Correo">
+              <div class="checkbox-container">
+                <input class="input-landing-sesion" type="password" placeholder="Contraseña">
+                <label>  <input class="checkbox-sesion" type="checkbox" value="0">
+                    Recuerdame
+                </label>
+              </div>
+
+              <div class="link-container">
+                <a href="google.com">¿Olvidaste tu contraseña?</a>
+                <button class="btn-sesion">
+                    Registrarme
+                </button>
+              </div>
+             
+             
+            </form>
+       
+    </section>
+    <section id="landing-page-clientes" class="oculto">
+        <header>
+            <div class="navbar-clientes">
+                <button class="fa-solid fa-bars icono-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart"></button>
+                <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
+                    <div class="offcanvas-header">
+                        
+                        <h5 id="offcanvasStartLabel">DjMike</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="background-color:rgba(55, 110, 192, 0.805);">
+                        ...
+                    </div>
+                </div>
+                <i class="fa-solid fa-cart-shopping icono-navbar"></i>
+                <img src="css/img/LogoG-removebg-preview.png" alt="">
+                
+            </div>
+        </header>
+        <section class="background-clientes"> <br>
+                <p>
+                    ¿Qué deseas hoy?
+                </p>
+          
+                <div class="container">
+                    <div class="row" id="categorias">
+                       
+                    </div>
+                </div>
+        </section>
+    </section>
+
+
+</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/controlador.js"></script>
+</html>
