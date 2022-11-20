@@ -9,12 +9,18 @@
     height:100px;
 }
 
+.input-success{
+    border-color: aqua;
+    background-color: rgb(0, 255, 81);
+    transition: 1s;
+}
+
 .container-img{
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    margin-top:75px;
+    margin-top:0px;
 }
 
 .container-img>div>p{
@@ -49,29 +55,15 @@
 }
 
 .button-landing{
-    width:52vw;
-    font-size:6vw;
-    background-color:rgb(199, 199, 34);
+    width:61vw;
+    font-size:8vw;
+    background-color:rgba(221, 205, 20, 0.938);
     color:white;
     border:0;
-    height:11vh;
+    height:15vh;
     margin: 5vh 0 5vh 0;
     padding: 2vh 2vw 2vh 2vw;
     border-radius: 18px;
-}
-.google-button{
-    width:65vw;
-    font-size:5vw;
-    background-color:white;
-    color:rgb(0, 0, 0);
-    border:0;
-    height:11vh;
-    margin: 5vh 0 5vh 0;
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    border-radius: 18px;
-
 }
 
 #logo-google{
@@ -124,7 +116,6 @@
     width:75vw;
     font-size:6vw;
     border-radius:10px;
-    border:2px solid black;
 }
 .input-landing-registro-1{
     height:9vh;
@@ -234,7 +225,7 @@ label{
     align-items:center;
     align-content: space-between;
     background-color: rgb(43, 93, 203);
-    padding:0 20px 0 20px;
+    padding:0 5px 0 10px;
 }
 
 .background-clientes{
@@ -249,29 +240,12 @@ label{
 
 }
 
-
-
-.img-categoria-2{
-    background-color:rgb(9, 69, 110);
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: -6px 2px 58px 5px rgba(250,17,17,0.54);
--webkit-box-shadow: -6px 2px 58px 5px rgba(250,17,17,0.54);
--moz-box-shadow: -6px 2px 58px 5px rgba(250,17,17,0.54);
-    margin:5vh 5vw 5vh 5vw; 
-    color:white;
-    width:30vh;
-    height:30vh;
-    text-align: end;
-;
-}
-
 .cards-categorias{
   
     border:2px solid white;
     text-align:center;
     border-radius: 15px;
-    margin:10px 0 5px 0;
+    margin:5px 0 5px 0;
     padding-top:18px;
     font-size:6vw;
     
@@ -279,7 +253,7 @@ label{
 }
 
 .iconos-categorias{
-    font-size: 21vw;
+    font-size: 16vw;
 }
 
 .icono-navbar{
@@ -290,3 +264,41 @@ label{
     border: 0;
 }
 
+/* estilos menus */
+
+#body-menu{
+    background-color:rgb(196,220,215);
+    width:100vw;
+    height:100vh;
+}
+.navbar-clientes-2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content: space-between;
+    background-color: rgb(43, 93, 203);
+    padding:0 5px 0 10px;
+}
+.container-all-menu{
+    display:flex;
+    flex-direction:column;
+}
+
+.container-all-menu>div>img{
+    width:120px;
+}
+
+.container-comida-rest{
+    display:flex;
+    background-color:red;
+    padding: 5px 5px 5px 5px;
+    margin: 15px 50px 15px 50px;
+    justify-content:space-between;
+
+}
+
+.container-menu-texto{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}

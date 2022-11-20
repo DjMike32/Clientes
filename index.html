@@ -10,17 +10,14 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <section id="landing-page" class="landing-page">
-        <header>
+    <section id="landing-page" class="landing-page ">
+        <!-- <header>
             <div id="navbar">
             </div>
-        </header>
+        </header> -->
         <article>
             <div class="container-img">
                 <img src="css/img/logo.jpg"  alt="">
-                <div>
-                    <p>Bienvenido</p>
-                </div>
             </div>
         </article>
         <section class="background-login">
@@ -28,15 +25,10 @@
                <button id="btn-registro" class="button-landing" onclick="comenzar()">
                     Registrarse 
                </button>
-               <button class="button-landing ">
+               <button class="button-landing  " onclick="iniciarSesion()">
                     Iniciar Sesión
                </button>
-               <button class="google-button">
-                    <img id=logo-google src="css/img/google.png" alt="">
-                    <p>
-                        Continuar con Google
-                    </p>
-               </button>     
+              
             </article>
         </section>
     </section>
@@ -45,44 +37,40 @@
 
         <header>
             <div id="navbar">
-                <img src="css/img/LogoG-removebg-preview.png" alt="">
-                <button class="fa-solid fa-arrow-left">
+                <img src="css/img/LogoG-removebg-preview.png"  alt="">
+                <button class="fa-solid fa-arrow-left" onclick="regresar()">
 
                 </button>
             </div>
         </header>
 
        <section>
-            <form class="form-registro" action="">
+            <form id="form-registro" class="form-registro" action="" onsubmit="return false">
                 <p>
                     Registrarse
                 </p>
-              <input class="input-landing-registro" type="text" placeholder="Nombre">
-              <input class="input-landing-registro" type="text" placeholder="Apellido">
-              <div>
-                <input class="input-landing-registro-1" type="number" placeholder="+504">            
-                <input class="input-landing-registro-2" type="tel" placeholder="Celular">
-              </div>  
-              <input class="input-landing-registro" type="email" placeholder="ejemplo@gmail.com">
-              <input class="input-landing-registro" type="password" placeholder="Contraseña">
-              <button class="btn-registro">
+              <input id="nombre" class="input-landing-registro" type="text" placeholder="Nombre" >
+              <input id="apellido" class="input-landing-registro" type="text" placeholder="Apellido">
+              <input id="celular" class="input-landing-registro" type="tel" placeholder="Celular">
+ 
+              <input id="correo" class="input-landing-registro" type="email" placeholder="ejemplo@gmail.com">
+              <input id="password" class="input-landing-registro" type="password" placeholder="Contraseña">
+              <button class="btn-registro" onclick="validarCampo(), guardar() " type="submit">
                 Registrarme
               </button>
             </form>
        </section>
     </section>
-    <section id="iniciar-sesion"class="background-registro oculto">
+    <section id="iniciar-sesion" class="background-registro oculto">
         <header>
             <div id="navbar">
                 <img src="css/img/LogoG-removebg-preview.png" alt="">
-                <button class="fa-solid fa-arrow-left">
+                <button class="fa-solid fa-arrow-left" onclick="regresar()">
 
                 </button>
             </div>
         </header>
-        
-            
-            <form class="form-registro-sesion" action="">
+            <form class="form-registro-sesion" action=""  onsubmit="return false">
                 <p>
                     Iniciar Sesión
                 </p>
@@ -100,18 +88,14 @@
                     Registrarme
                 </button>
               </div>
-             
-             
             </form>
-       
     </section>
     <section id="landing-page-clientes" class="oculto">
         <header>
-            <div class="navbar-clientes">
-                <button class="fa-solid fa-bars icono-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart"></button>
-                <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
+            <div class="navbar-clientes-2">
+                <button class="fa-solid fa-bars icono-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart1" aria-controls="offcanvasStart1"></button>
+                <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasStart1" aria-labelledby="offcanvasStartLabel">
                     <div class="offcanvas-header">
-                        
                         <h5 id="offcanvasStartLabel">DjMike</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -119,9 +103,8 @@
                         ...
                     </div>
                 </div>
-                <i class="fa-solid fa-cart-shopping icono-navbar"></i>
-                <img src="css/img/LogoG-removebg-preview.png" alt="">
-                
+                <i class="fa-solid fa-cart-shopping icono-navbar"></i>    
+                <img src="css/img/LogoG-removebg-preview.png" alt="">  
             </div>
         </header>
         <section class="background-clientes"> <br>
@@ -134,6 +117,90 @@
                        
                     </div>
                 </div>
+        </section>
+    </section>
+    <section id="menus" class="oculto">
+        <header>
+            <div class="navbar-clientes">
+                <button class="fa-solid fa-bars icono-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart2" aria-controls="offcanvasStart2"></button>
+                <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasStart2" aria-labelledby="offcanvasStartLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasStartLabel">DjMike</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="background-color:rgba(55, 110, 192, 0.805);">
+                        ...
+                    </div>
+                </div>
+                <i class="fa-solid fa-cart-shopping icono-navbar"></i>    
+                <img src="css/img/LogoG-removebg-preview.png" alt="">  
+            </div>
+        </header>
+        <section id="body-menu">
+            <div class="container-all-menu">
+                <div class="container-comida-rest" type="button">
+                    <img src="css/img/BACON-KING-SENCILLO_4.png" alt="" width="100%" height="">
+                    <div class="container-menu-texto">
+                        <h2>
+                            comida
+                        </h2>
+                        <p>
+                            descripcion
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>   
+                            <i class="fa-solid fa-star"></i>    
+                        </div>
+                    </div>
+                </div>
+                <div class="container-comida-rest" >
+                    <img src="css/img/BACON-KING-SENCILLO_4.png" alt="" width="100%" height="">
+                    <div class="container-menu-texto">
+                        <h2>
+                            comida
+                        </h2>
+                        <p>
+                            descripcion
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>   
+                            <i class="fa-solid fa-star"></i>    
+                        </div>
+                    </div>
+                </div>
+                <div class="container-comida-rest">
+                    <img src="css/img/BACON-KING-SENCILLO_4.png" alt="" width="100%" height="">
+                    <div class="container-menu-texto">
+                        <h2>
+                            comida
+                        </h2>
+                        <p>
+                            descripcion
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>   
+                            <i class="fa-solid fa-star"></i>    
+                        </div>
+                    </div>
+                </div>
+                <div class="container-comida-rest">
+                    <img src="css/img/BACON-KING-SENCILLO_4.png" alt="" width="100%" height="">
+                    <div class="container-menu-texto">
+                        <h2>
+                            comida
+                        </h2>
+                        <p>
+                            descripcion
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>   
+                            <i class="fa-solid fa-star"></i>    
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </section>
     </section>
 
