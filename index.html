@@ -10,17 +10,15 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <section id="landing-page" class="landing-page ">
-        <!-- <header>
+    <!-- Landing page -->
+    <section id="landing-page" class="landing-page "> 
             <div id="navbar">
-            </div>
-        </header> -->
-        <article>
-            <div class="container-img">
-                <img src="css/img/logo.jpg"  alt="">
+               
+                <img id="logo-final"src="css/img/Logo_definitivo.png"  alt="">
+                <h1 style="color:white;">Get Home</h1>
             </div>
         </article>
-        <section class="background-login">
+        <section class="background-login"><br>
             <article class="container-blur">
                <button id="btn-registro" class="button-landing" onclick="comenzar()">
                     Registrarse 
@@ -28,49 +26,63 @@
                <button class="button-landing  " onclick="iniciarSesion()">
                     Iniciar Sesión
                </button>
-              
             </article>
         </section>
+        <footer>
+            <section class="left">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </section>
+            <section class="left">
+                <ul>
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Privacidad</a></li>
+                </ul>
+            </section>
+        </footer>
     </section>
-    <section id="registro" class="background-registro oculto">
 
-
+    <!-- Pagina de Registro  -->
+    <section id="registro" class="background-registro oculto"> 
         <header>
             <div id="navbar">
-                <img src="css/img/LogoG-removebg-preview.png"  alt="">
-                <button class="fa-solid fa-arrow-left" onclick="regresar()">
-
+                <img id="logo-final" src="css/img/Logo_definitivo.png"  alt="">
+                <button class="fa-solid fa-arrow-left" onclick="regresar(), resetForm()">
                 </button>
             </div>
         </header>
-
        <section>
+              <!-- Primer formulario de Registro  -->
             <form id="form-registro" class="form-registro" action="" onsubmit="return false">
                 <p>
                     Registrarse
                 </p>
-              <input id="nombre" class="input-landing-registro" type="text" placeholder="Nombre" >
-              <input id="apellido" class="input-landing-registro" type="text" placeholder="Apellido">
-              <input id="celular" class="input-landing-registro" type="tel" placeholder="Celular">
- 
-              <input id="correo" class="input-landing-registro" type="email" placeholder="ejemplo@gmail.com">
-              <input id="password" class="input-landing-registro" type="password" placeholder="Contraseña">
-              <button class="btn-registro" onclick="validarCampo(), guardar() " type="submit">
+              <input id="nombre-cliente" class="input-landing-registro" type="text" placeholder="Nombre" onkeyup="validarCampoVacio(this.id)">
+              <input id="apellido-cliente" class="input-landing-registro" type="text" placeholder="Apellido" onkeyup="validarCampoVacio(this.id)">
+              <input id="celular-cliente" class="input-landing-registro" type="tel" placeholder="Celular (504 1234-4321)" onkeyup="validarCelular(this.id)">
+              <input id="correo-cliente" class="input-landing-registro" type="email" placeholder="Correo (ejemplo@gmail.com)" onkeyup="validarCorreo(this.id)">
+              <input id="password-cliente" class="input-landing-registro" type="password" placeholder="Contraseña (8 letras/numeros minimo) " onkeyup="validarPassword(this.id)">
+              <button class="btn-registro"  type="submit" onclick="resetForm()" >
                 Registrarme
               </button>
             </form>
        </section>
     </section>
-    <section id="iniciar-sesion" class="background-registro oculto">
+    <!-- Pagina de iniciar Sesión -->
+    <section id="iniciar-sesion" class="background-registro oculto"> 
         <header>
             <div id="navbar">
-                <img src="css/img/LogoG-removebg-preview.png" alt="">
+                <img id="logo-final" src="css/img/Logo_definitivo.png" alt="">
                 <button class="fa-solid fa-arrow-left" onclick="regresar()">
-
                 </button>
             </div>
         </header>
             <form class="form-registro-sesion" action=""  onsubmit="return false">
+                <!-- Segundo formulario para inicar sesión  -->
                 <p>
                     Iniciar Sesión
                 </p>
@@ -81,16 +93,16 @@
                     Recuerdame
                 </label>
               </div>
-
               <div class="link-container">
-                <a href="google.com">¿Olvidaste tu contraseña?</a>
+                <a href="">¿Olvidaste tu contraseña?</a>
                 <button class="btn-sesion">
-                    Registrarme
+                    Iniciar Sesión
                 </button>
               </div>
             </form>
     </section>
-    <section id="landing-page-clientes" class="oculto">
+    <!-- Pagina de inicio de Get Home -->
+    <section id="landing-page-clientes" class="oculto"> 
         <header>
             <div class="navbar-clientes-2">
                 <button class="fa-solid fa-bars icono-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart1" aria-controls="offcanvasStart1"></button>
