@@ -2,30 +2,30 @@ var categorias =[
     {
         nombre: 'Comida Rapida',
         icono: 'fa-burger',
-        colorIcono: 'blue',
-        backgroundColor: 'rgb(247,196,0)',
-        colorTexto: '#FF6282'
+        colorIcono: 'orange',
+        backgroundColor: 'rgb(51, 58, 90)',
+        colorTexto: 'white'
     },
     {
         nombre: 'Ropa',
         icono: 'fa-shirt',
-        colorIcono: 'blue',
-        backgroundColor: '#FFFFFF',
-        colorTexto: '#FF6282'
+        colorIcono: 'red',
+        backgroundColor: 'rgb(51, 58, 90)',
+        colorTexto: 'white'
     },
     {
         nombre: 'Medicamentos',
         icono: 'fa-pills',
-        colorIcono: 'blue',
-        backgroundColor: '#FFFFFF',
-        colorTexto: '#FF6282'
+        colorIcono: 'green',
+        backgroundColor: 'rgb(51, 58, 90)',
+        colorTexto: 'white'
     },
     {
         nombre: 'Accesorios',
         icono: 'fa-headphones',
-        colorIcono: 'blue',
-        backgroundColor: '#FFFFFF',
-        colorTexto: '#FF6282'
+        colorIcono: 'pink',
+        backgroundColor: 'rgb(51, 58, 90)',
+        colorTexto: 'white'
     },
 ]
 
@@ -43,7 +43,7 @@ var datosUsuario =[{
 function generarCategorias(){
     categorias.forEach(function(categoria){
         document.getElementById('categorias').innerHTML+=
-        ` <div class=" col-6" type="button" onclick="generarMenus()">
+        ` <div class=" col-12" type="button" onclick="generarMenus()">
         <div class="cards-categorias" style="background-color:${categoria.backgroundColor}">
             <i class="fa-solid ${categoria.icono} iconos-categorias" style="color:${categoria.colorIcono}"></i>
             <p style="color:${categoria.colorTexto}">${categoria.nombre}</p>
@@ -157,5 +157,8 @@ function resetForm() {
    
   }
 
+function validarForm(){
+    
+}
   
 
