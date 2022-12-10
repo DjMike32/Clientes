@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Nerko One', cursive;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+#navbar{
+    background-color:rgb(51, 58, 90);
+    height:100px;
+}
+
+
+
+#logo-final{
+   width: 100px;
+   margin-left:100px;
+}
+
+.input-success{
+   border: 5px solid rgb(75, 243, 75);
+}
+.input-error{
+    border: 5px solid red;
+}
+
+.container-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin-top:0px;
+}
+
+.container-img>div>p{
+    color:rgb(247, 75, 7);
+    font-size:8vw;
+    margin-top:50px;
+    margin-bottom: 50px;
+    
+}
+
+.background-login{
+    height:70vh;
+    width:calc(100%-10vw);
+    background:url(./img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.container-blur{
+    width: 90vw;
+    height: 65vh;
+    background:linear-gradient(rgba(211, 216, 229, 0.75),rgba(193, 200, 215, 0.75));
+    margin-left: 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    border-radius: 50px;
+   
+}
+
+.button-landing{
+    width:61vw;
+    font-size:8vw;
+    background-color:rgb(51, 58, 90);
+    color:white;
+    border:0;
+    height:12vh;
+    margin: 5vh 0 5vh 0;
+    padding: 2vh 2vw 2vh 2vw;
+    border-radius: 18px;
+}
+
+#logo-google{
+    width:7vw;
+}
+
+
+.oculto{
+    display:none;
+}
+
+#navbar{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 3vw 0 3vw;
+}
+
+.background-registro{
+    background-color:rgba(97, 117, 206, 0.283); 
+    height:100vh;
+}
+.background-registro>p{
+    font-size:10vw;
+    color: black;
+    padding: 6vh 4vw 6vh 4vw;
+    text-align: center;
+}
+
+.form-registro{
+    width:90vw;
+    height:80vh;
+    background-color:rgb(51, 58, 90); 
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-content:center;
+    margin: 5vh 0 0 5vw;
+    border-radius: 60px;
+    align-items:center;
+    padding: 4vh 4vw 4vh 4vw;
+    color:white;
+}
+
+
+.input-landing-registro{
+    height:9vh;
+    width:75vw;
+    font-size:6vw;
+    border-radius:10px;
+    font-family:Tahoma, Arial
+}
+
+.input-landing-registro::placeholder{
+    font-size:4vw;
+    font-family:Tahoma, Arial
+}
+
+.input-landing-registro-1{
+    height:9vh;
+    width:22vw;
+    font-size:5vw;
+    border-radius:10px;
+    border:2px solid black;
+    font-size:7vw;
+}
+.input-landing-registro-2{
+    height:9vh;
+    width:52vw;
+    font-size:5vw;
+    border-radius:10px;
+    border:2px solid black;
+    font-size:7vw;
+}
+
+.btn-registro{
+    height:11vh;
+    width:65vw;
+    font-size:5vw;
+    border-radius:10px;
+    border:2px solid black;
+    font-size:7vw;
+    background-color:rgb(247,196,0);
+    cursor: pointer;
+}
+
+.input-landing-registro::placeholder, .input-landing-registro-1::placeholder, .input-landing-registro-2::placeholder{
+    padding-left:3vw;
+}
+
+.fa-solid{
+    color:rgb(247,196,0);
+    font-size:50px;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.form-registro>p{
+    font-size:8vw;
+}
+
+.input-landing-sesion{
+    height:9vh;
+    width:75vw;
+    font-size:6vw;
+    border-radius:10px;
+    border:2px solid black;
+}
+
+.form-registro-sesion{
+    width:90vw;
+    height:60vh;
+    background-color:rgb(51, 58, 90); 
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-content:center;
+    margin: 20vh 0 0 5vw;
+    border-radius: 60px;
+    align-items:center;
+    padding: 4vh 4vw 4vh 4vw;
+    font-size:9vw;
+    color: white;
+}
+
+.checkbox-container{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-size:4.5vw;
+}
+
+.link-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-self:flex-end;
+    align-items:flex-end;
+    
+}
+.link-container>a{
+    font-size:5vw;
+    margin-bottom:3vh;
+    color:white;
+    cursor:pointer;
+}
+.btn-sesion{
+    height:11vh;
+    width:65vw;
+    font-size:5vw;
+    border-radius:10px;
+    border:2px solid black;
+    font-size:7vw;
+    background-color:rgb(247,196,0);
+    cursor: pointer;
+    margin-right:8vw;
+}
+/* sadjbsakda */
+
+.navbar-clientes{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content: space-between;
+    background-color:rgb(51, 58, 90); 
+    padding:0 5px 0 10px;
+}
+
+.background-clientes{
+    background-color:rgb(231, 242, 239);
+    width:100vw;
+    height:100vh;
+}
+
+.background-clientes>p{
+    font-size:7vw;
+    text-align: center;
+
+}
+
+.cards-categorias{
+    border:3px solid white;
+    text-align:center;
+    border-radius: 25px;
+    margin:7px 0 7px 0;
+    padding-top:20px;
+    font-size:7vw;
+}
+
+.iconos-categorias{
+    font-size: 16vw;
+}
+
+.icono-navbar{
+    color:rgb(37, 36, 31);
+    font-size:40px;
+    background-color:transparent;
+    cursor:pointer;
+    border: 0;
+}
+
+/* estilos menus */
+
+#body-menu{
+    background-color:rgb(196,220,215);
+    width:100vw;
+    height:100vh;
+}
+.navbar-clientes-2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content: space-between;
+    background-color:rgb(51, 58, 90); 
+    padding:0 25px 0 10px;
+}
+.container-all-menu{
+    display:flex;
+    flex-direction:column;
+}
+
+.container-all-menu>div>img{
+    width:120px;
+}
+
+.container-comida-rest{
+    display:flex;
+    background-color:red;
+    padding: 5px 5px 5px 5px;
+    margin: 15px 50px 15px 50px;
+    justify-content:space-between;
+
+}
+
+.container-menu-texto{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+#logo-menu{
+    width:100px;
+    margin-left:10px;
+}
+
+.fa-cart-shopping{
+    color:rgb(247,196,0);
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(51, 58, 90);
+    color: white;
+}
+
+
+
+footer>section {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 50%;
+    color: white;
+}
+
+.left>ul {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    color: white;
+}
+
+.left>li{
+    margin: 10px 0;
+    color: white;
+}
+.left>a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-user{
+    margin-left:15px;
+    color:rgb(247,196,0);
+}
+
+.container-config{
+    height:100vh;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+   
+}
+
+.container-config-in{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(51, 58, 90);
+    border-radius:20px;
+    padding: 20px 0 20px 0
+}
+
+.config-text{
+    font-size:9vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card-empresas{
+    background-color:rgb(255, 255, 255);
+    font-size:7vw;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    margin:10px 10px 5px 10px;
+    box-shadow: -1px 1px 16px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 16px 0px rgba(0,0,0,0.75);
+}
+
+.img-empresas{
+    width:150px;
+    background-color:red;
+}
+
+.object-fit-top{
+    width:102%;
+    text-align:center;
+    border: 6px outset;
+    background-color:white;
+}
+.object-fit-top>h1{
+    font-size:5vw;
+}
+
+.object-fit-width{
+    width:101%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border: outset 2px;
+}
+
+.object-fit-inside{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    justify-content:space-between;
+    margin-right: 21px;
+
+}
+
+.object-fit-inside>h5{
+    font-size:4.5vw;
+    color:rgb(110, 20, 20);
+    margin:10px 0 10px 0;
+}
+
+#description{
+    font-size:3.5vw;
+    color:grey;
+    text-align: center;
+    margin-top:3px;
+}
+
+.object-fit-left{
+    border: outset 4px;
+}
